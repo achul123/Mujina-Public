@@ -45,6 +45,25 @@ public class Frame {
         }
     }
 
+    public void drawRoundedRect(DrawContext context, int x, int y, int width, int height, int radius, int color) {
+        float f = (color >> 24 & 255) / 255.0F;
+        float f1 = (color >> 16 & 255) / 255.0F;
+        float f2 = (color >> 8 & 255) / 255.0F;
+        float f3 = (color & 255) / 255.0F;
+
+        context.fill(x + radius, y, x + width - radius, y + height, new Color(f1, f2, f3, f).getRGB());
+        context.fill(x, y + radius, x + width, y + height - radius, new Color(f1, f2, f3, f).getRGB());
+        context.fill(x, y, x + radius, y + height, new Color(f1, f2, f3, f).getRGB());
+        context.fill(x + width - radius, y, x + width, y + height, new Color(f1, f2, f3, f).getRGB());
+
+        for (int i = 0; i < radius; ++i) {
+            context.fill(x + i, y + i, x + radius, y + i + 1, new Color(f1, f2, f3, f).getRGB());
+            context.fill(x + width - i - 1, y + i, x + width - i, y + i + 1, new Color(f1, f2, f3, f).getRGB());
+            context.fill(x + i, y + height - i - 1, x + i + 1, y + height - i, new Color(f1, f2, f3, f).getRGB());
+            context.fill(x + width - i - 1, y + height - i - 1, x + width - i, y + height - i, new Color(f1, f2, f3, f).getRGB());
+        }
+    }
+
     public void render(DrawContext matrices, int mouseX, int mouseY, float delta) {
         // Give the method the shit it needs to render shit
         VertexConsumerProvider.Immediate immediate = mc.getBufferBuilders().getEntityVertexConsumers();
@@ -52,7 +71,7 @@ public class Frame {
         DrawContext drawContext = new DrawContext(mc, immediate); // Instantiate a concrete implementation
 
         // draw the actual category button or whatever
-        drawContext.fill(x, y, x + width, y + height, ColorHelper.getCategoryRGB(this.category));
+        drawRoundedRect(drawContext, x, y, x + width, y + height, 5, ColorHelper.getCategoryRGB(this.category));
         // render category name
         mc.textRenderer.draw(category.getName(), x + 2, y + 2, Colors.WHITE, false, matrices.getMatrices().peek().getPositionMatrix(), vertexConsumerProvider, TextRenderer.TextLayerType.NORMAL, 0, LightmapTextureManager.MAX_LIGHT_COORDINATE);
         mc.textRenderer.draw(extended ? "⌄" : "^", x + width - 3 - mc.textRenderer.getWidth("-"), y + 2, Colors.WHITE, false, matrices.getMatrices().peek().getPositionMatrix(), vertexConsumerProvider, TextRenderer.TextLayerType.NORMAL, 0, LightmapTextureManager.MAX_LIGHT_COORDINATE);
