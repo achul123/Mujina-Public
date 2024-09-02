@@ -6,7 +6,7 @@ import io.github.lefraudeur.modules.Module;
 import net.minecraft.item.Items;
 import net.minecraft.util.Hand;
 
-@Info(category = Category.MISC, name = "Rocket",  description = "Uses a rocket. Useful for like, elytra stuff", key = Module.key_none)
+@Info(category = Category.MISC, name = "Rocket", description = "Uses a rocket. Useful for like, elytra stuff", key = Module.key_none)
 public final class Rocket extends Module {
 
     @Override

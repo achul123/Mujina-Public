@@ -12,7 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.random.Random;
 
-@Info(category = Category.COMBAT, name = "NoKbJump",  description = "Jumps when you are hit", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "NoKbJump", description = "Jumps when you are hit", key = Module.key_none)
 public final class NoKbJump extends Module {
 
     private final BooleanSetting chanceBool = new BooleanSetting("chance", "", true);

@@ -5,7 +5,7 @@ import io.github.lefraudeur.modules.Category;
 import io.github.lefraudeur.modules.Info;
 import io.github.lefraudeur.modules.Module;
 
-@Info(category = Category.MOVEMENT, name = "Glide",  description = "Allows you to glide around. Made for vulcan.", key = Module.key_none)
+@Info(category = Category.MOVEMENT, name = "Glide", description = "Allows you to glide around. Made for vulcan.", key = Module.key_none)
 public final class Glide extends Module {
     public Glide() { super(); }
 

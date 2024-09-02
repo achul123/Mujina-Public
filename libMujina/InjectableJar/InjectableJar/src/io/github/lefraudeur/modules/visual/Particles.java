@@ -5,7 +5,7 @@ import io.github.lefraudeur.modules.Category;
 import io.github.lefraudeur.modules.Info;
 import io.github.lefraudeur.modules.Module;
 
-@Info(category = Category.VISUAL, name = "Particles",  description = "particles", key = Module.key_none)
+@Info(category = Category.VISUAL, name = "Particles", description = "particles", key = Module.key_none)
 public final class Particles extends Module {
 
     @Override

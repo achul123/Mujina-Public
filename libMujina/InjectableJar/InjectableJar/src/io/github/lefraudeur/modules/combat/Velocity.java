@@ -16,9 +16,8 @@ import net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 
-@Info(category = Category.COMBAT, name = "Velocity",  description = "Make it longer", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "Velocity", description = "Make it longer", key = Module.key_none)
 public class Velocity extends Module {
-
 
     private final ModeSetting mode = new ModeSetting("Mode", "The Bhop mode.", "Vanilla", "Grim");
     private final ValueSetting delay = new ValueSetting("delay", "The speed you need to go at", 6.0, 0.5, 12.0, 2);

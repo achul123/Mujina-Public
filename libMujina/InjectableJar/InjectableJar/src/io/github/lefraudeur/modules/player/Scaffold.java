@@ -7,9 +7,7 @@ import io.github.lefraudeur.modules.Module;
 import io.github.lefraudeur.utils.BlockUtils;
 import net.minecraft.util.Hand;
 
-import static io.github.lefraudeur.modules.Module.key_none;
-
-@Info(category = Category.PLAYER, name = "Scaaffold",  description = "Scaffold...", key = key_none)
+@Info(category = Category.PLAYER, name = "Scaaffold", description = "Scaffold...", key = Module.key_none)
 public final class Scaffold extends Module {
 
     @Override

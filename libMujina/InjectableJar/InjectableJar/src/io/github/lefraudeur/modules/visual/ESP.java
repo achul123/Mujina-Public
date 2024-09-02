@@ -9,7 +9,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 
-@Info(category = Category.VISUAL, name = "esp",  description = "ESP", key = Module.key_none)
+@Info(category = Category.VISUAL, name = "esp", description = "ESP", key = Module.key_none)
 public final class ESP extends Module {
 
     StatusEffectInstance glowing = new StatusEffectInstance(StatusEffects.GLOWING, 32767, 0, false, false);

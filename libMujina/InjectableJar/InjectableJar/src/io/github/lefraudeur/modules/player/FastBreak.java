@@ -7,9 +7,7 @@ import io.github.lefraudeur.modules.Module;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
-import static io.github.lefraudeur.modules.Module.key_none;
-
-@Info(category = Category.PLAYER, name = "FastBreak",  description = "Breaks Fast!", key = key_none)
+@Info(category = Category.PLAYER, name = "FastBreak", description = "Breaks Fast!", key = Module.key_none)
 public final class FastBreak extends Module {
 
     StatusEffectInstance haste = new StatusEffectInstance(StatusEffects.HASTE, 32767, 0, false, false);

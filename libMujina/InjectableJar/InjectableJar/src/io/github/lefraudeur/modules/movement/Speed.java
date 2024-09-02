@@ -18,7 +18,7 @@ import org.lwjgl.glfw.GLFW;
 
 import static io.github.lefraudeur.utils.MoveUtils.getBaseMoveEventSpeed;
 
-@Info(category = Category.MOVEMENT, description = "Allows you to move faster.", key = GLFW.GLFW_KEY_V, name = "Bhop")
+@Info(category = Category.MOVEMENT, name = "Bhop", description = "Allows you to move faster.", key = Module.key_none)
 public class Speed extends Module {
 
     private final ModeSetting mode = new ModeSetting("Mode", "The Bhop mode.", "Vanilla", "Matrix1", "Grim", "Vulcan", "VulcanGround");

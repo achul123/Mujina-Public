@@ -11,7 +11,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 
-@Info(category = Category.MISC, name = "CivBreak",  description = "Funy break :D", key = Module.key_none)
+@Info(category = Category.MISC, name = "CivBreak", description = "Funy break :D", key = Module.key_none)
 public class CivBreak extends Module {
     public CivBreak() { super(); }
     private BlockPos pos;

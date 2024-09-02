@@ -11,7 +11,7 @@ import net.minecraft.network.packet.s2c.play.GameMessageS2CPacket;
 
 import java.util.Objects;
 
-@Info(category = Category.MISC, name = "Teams",  description = "Don't hit my teammates :(", key = Module.key_none)
+@Info(category = Category.MISC, name = "Teams", description = "Don't hit my teammates :(", key = Module.key_none)
 public final class Teams extends Module {
 
     private static final ModeSetting mode = new ModeSetting("Mode", "Mode", "Normal", "Armor", "DisplayName");

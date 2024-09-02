@@ -7,7 +7,7 @@ import io.github.lefraudeur.modules.Module;
 import io.github.lefraudeur.utils.MoveUtils;
 import org.lwjgl.glfw.GLFW;
 
-@Info(category = Category.MOVEMENT, name = "AutoJump",  description = "Jumps automatically!!!", key = GLFW.GLFW_KEY_Z)
+@Info(category = Category.MOVEMENT, name = "AutoJump", description = "Jumps automatically!!!", key = Module.key_none)
 public final class AutoJump extends Module {
     public AutoJump() { super(); }
 

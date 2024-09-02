@@ -33,11 +33,9 @@ import java.util.Comparator;
 import java.util.List;
 
 
-@Info(category = Category.VISUAL, name = "HUD",  description = "Opens a GUI to config the cheat", key = Module.key_none)
+@Info(category = Category.VISUAL, name = "HUD", description = "Opens a GUI to config the cheat", key = Module.key_none)
 public final class HUD extends Module {
-    public HUD() {
-        super();
-    }
+    public HUD() { super(); }
 
     private long lastPacket = 0;
 
@@ -52,7 +50,7 @@ public final class HUD extends Module {
 
     private double speedMeter = 0;
 
-    public void render(MatrixStack matrices, float tickDelta) {
+    public void render(MatrixStack matrices, float tickDelta) { // useless
 
     }
 

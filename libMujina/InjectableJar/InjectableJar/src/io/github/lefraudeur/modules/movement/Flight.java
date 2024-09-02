@@ -18,7 +18,7 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.Objects;
 
-@Info(category = Category.MOVEMENT, name = "Flight",  description = "Allows you to fly around.", key = GLFW.GLFW_KEY_G)
+@Info(category = Category.MOVEMENT, name = "Flight", description = "Allows you to fly around.", key = Module.key_none)
 public final class Flight extends Module {
     public Flight() { super(); }
 

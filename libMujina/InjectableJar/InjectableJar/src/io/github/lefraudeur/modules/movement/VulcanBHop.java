@@ -6,7 +6,7 @@ import io.github.lefraudeur.modules.Info;
 import io.github.lefraudeur.modules.Module;
 import io.github.lefraudeur.utils.MoveUtils;
 
-@Info(category = Category.MOVEMENT, name = "VulcannotBhop",  description = "BIG BHOP!!!!!!", key = Module.key_none)
+@Info(category = Category.MOVEMENT, name = "VulcannotBhop", description = "BIG BHOP!!!!!!", key = Module.key_none)
 public final class VulcanBHop extends Module {
     public VulcanBHop() { super(); }
 

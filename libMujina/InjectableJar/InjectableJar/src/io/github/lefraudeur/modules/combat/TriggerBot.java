@@ -25,9 +25,7 @@ import net.minecraft.util.hit.HitResult;
 
 import java.util.function.Predicate;
 
-import static io.github.lefraudeur.modules.Module.key_none;
-
-@Info(category = Category.COMBAT, name = "TBot",  description = "Hits people :)", key = key_none)
+@Info(category = Category.COMBAT, name = "TBot", description = "Hits people :)", key = Module.key_none)
 public final class TriggerBot extends Module {
 
     private final ModeSetting weaponType = new ModeSetting("Weapon", "What weapon should aura prefer?", "Sword", "Axe", "Pickaxe", "Slot", "All", "Any");

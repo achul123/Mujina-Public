@@ -9,9 +9,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 
-import static io.github.lefraudeur.modules.Module.key_none;
-
-@Info(category = Category.PLAYER, name = "Fast Use",  description = "Use stuff fast...", key = key_none)
+@Info(category = Category.PLAYER, name = "Fast Use", description = "Use stuff fast...", key = Module.key_none)
 public final class FastUse extends Module {
 
     @Override

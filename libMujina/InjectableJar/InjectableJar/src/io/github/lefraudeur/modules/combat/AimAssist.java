@@ -13,7 +13,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.Vec3d;
 
-@Info(category = Category.COMBAT, name = "AimAssist",  description = "Aims for you...", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "AimAssist", description = "Aims for you...", key = Module.key_none)
 public final class AimAssist extends Module {
 
     private final BooleanSetting playerOnly = new BooleanSetting("Players Only", "Aim only players", true);

@@ -6,7 +6,7 @@ import io.github.lefraudeur.modules.Category;
 import io.github.lefraudeur.modules.Info;
 import io.github.lefraudeur.modules.Module;
 
-@Info(category = Category.MOVEMENT, name = "Clip",  description = "Allows you to clip...", key = Module.key_none)
+@Info(category = Category.MOVEMENT, name = "Clip", description = "Allows you to clip...", key = Module.key_none)
 public final class Clip extends Module {
     public Clip() { super(); }
 

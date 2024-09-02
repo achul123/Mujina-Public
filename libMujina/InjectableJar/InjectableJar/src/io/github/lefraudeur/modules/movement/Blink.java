@@ -10,7 +10,7 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-@Info(category = Category.MOVEMENT, name = "Blink",  description = "Cancels packets or whatever", key = GLFW.GLFW_KEY_B)
+@Info(category = Category.MOVEMENT, name = "Blink", description = "Cancels packets or whatever", key = Module.key_none)
 public final class Blink extends Module
 {
     private final ConcurrentLinkedQueue<Packet<?>> saved_packets = new ConcurrentLinkedQueue<>();

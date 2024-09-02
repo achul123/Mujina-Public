@@ -10,7 +10,7 @@ import io.github.lefraudeur.modules.misc.Teams;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 
-@Info(category = Category.COMBAT, name = "NoMiss",  description = "Prevents misses", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "NoMiss", description = "Prevents misses", key = Module.key_none)
 public final class NoMiss extends Module {
 
     private final BooleanSetting playerOnly = new BooleanSetting("NoTeam", "Cancels hits on teammates", false);

@@ -28,7 +28,7 @@ import net.minecraft.util.Hand;
 import java.util.ArrayList;
 import java.util.List;
 
-@Info(category = Category.COMBAT, name = "Aura",  description = "Kills Auras", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "Aura", description = "Kills Auras", key = Module.key_none)
 public class Aura extends Module {
 
     private final ModeSetting rotMode = new ModeSetting("Rotations", "The rotation mode.", "packet2", "Vanilla");

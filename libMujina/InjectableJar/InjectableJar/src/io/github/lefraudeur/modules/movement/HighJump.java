@@ -19,7 +19,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 
-@Info(category = Category.MOVEMENT, name = "HighJump",  description = "Allows you to jump higher.", key = Module.key_none)
+@Info(category = Category.MOVEMENT, name = "HighJump", description = "Allows you to jump higher.", key = Module.key_none)
 public class HighJump extends Module {
     public HighJump() { super(); }
 

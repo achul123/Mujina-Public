@@ -12,7 +12,7 @@ import org.lwjgl.glfw.GLFW;
 
 import java.awt.*;
 
-@Info(category = Category.COMBAT, name = "AutoClicker",  description = "Clicks Auto", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "AutoClicker", description = "Clicks Auto", key = Module.key_none)
 public class AutoClicker extends Module {
 
     public BooleanSetting lmb = new BooleanSetting("Left mouse", "", true);
@@ -20,7 +20,6 @@ public class AutoClicker extends Module {
     private final ValueSetting cps = new ValueSetting("CPS", "The clicks per second", 14.0, 0.5, 12.0, 2);
     private final ValueSetting minCps = new ValueSetting("CPS", "The clicks per second", 14.0, 0.5, 12.0, 2);
     private final ValueSetting maxCps = new ValueSetting("CPS", "The clicks per second", 14.0, 0.5, 12.0, 2);
-
 
     @Override
     public void onPreTickEvent(final PreTickEvent event) {

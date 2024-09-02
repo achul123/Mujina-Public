@@ -6,7 +6,7 @@ import io.github.lefraudeur.modules.Info;
 import io.github.lefraudeur.modules.Module;
 import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
 
-@Info(category = Category.COMBAT, name = "wTap",  description = "wTap funny!", key = Module.key_none)
+@Info(category = Category.COMBAT, name = "wTap", description = "wTap funny!", key = Module.key_none)
 public final class wTap extends Module {
 
     @Override

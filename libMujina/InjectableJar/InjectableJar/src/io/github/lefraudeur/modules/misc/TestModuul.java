@@ -13,7 +13,7 @@ import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 
-@Info(category = Category.MISC, name = "TestModuul",  description = "tests for you...", key = Module.key_none)
+@Info(category = Category.MISC, name = "TestModuul", description = "tests for you...", key = Module.key_none)
 public final class TestModuul extends Module
 {
     private final  BooleanSetting testBool = new BooleanSetting("Test Bool!!", "aaa", true);

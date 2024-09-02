@@ -11,9 +11,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.packet.s2c.play.EntityStatusS2CPacket;
 
-import static io.github.lefraudeur.modules.Module.key_none;
-
-@Info(category = Category.MISC, name = "AutoGG",  description = "Sends message after someone dies.", key = key_none)
+@Info(category = Category.MISC, name = "AutoGG", description = "Sends message after someone dies.", key = Module.key_none)
 public class AutoGG extends Module {
     public AutoGG() { super(); }
 

@@ -71,6 +71,7 @@ public abstract class Module {
     protected void onDisable()
     {
     }
+    
     public void onPacketSendEvent(final PacketSendEvent event)
     {
     }
@@ -111,6 +112,7 @@ public abstract class Module {
     public void onMidUpdateTargetedEntityEvent(MidUpdateTargetedEntityEvent event)
     {
     }
+
     public void onBlockCollisionEvent(BlockCollisionEvent event)
     {
     }
